@@ -1,0 +1,89 @@
+@import 'partails/params';
+@import 'partails/mixins';
+
+
+.navbar {
+    padding: 28px 5px 22px 5px;
+
+    .navbar-brand {
+        .logo {
+            max-height: $logo-height;
+        }
+    }
+    .navbar-nav {
+        .nav-item {
+
+            margin-right: 15px;
+            .nav-link{
+                color: $text-color;  
+                &:hover {
+                    color: $navbar_text_hover-color;
+                }
+            }            
+        }       
+    }
+
+    .contacts {
+        line-height: 1.1rem;
+        margin-right: 15px;
+    
+    
+        .btn {
+            @include rounded;
+            background-color: $icons-color;    
+            height: 30px;
+            width: 30px;    
+            padding: 0 6px;     
+            line-height: 30px;   
+            border: 0;
+            margin: 0 5px;
+            transition: background-color .3s;
+            a {
+                i {
+                    color: #fff;
+    
+                    &.fa-phone {
+                        transform: scale(-1, 1) translate(0, -2px);
+                    }
+                }
+            }
+    
+            &:hover {
+                background-color: $icons_hover-color;
+            }
+        
+            
+        } 
+            
+        .wtv-phone { 
+    
+            a.link-dark {
+                color: $text-color;
+                &:hover {
+                    text-decoration: none;
+                    color: $navbar_text_hover-color;
+                }
+            }
+    
+            small {
+                color: $icons-color;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 992px ) {
+    .navbar{
+        
+        .contacts {    
+
+            .btn:first-of-type {
+                margin-left: 0;
+            }
+        }    
+    }
+}
+
+

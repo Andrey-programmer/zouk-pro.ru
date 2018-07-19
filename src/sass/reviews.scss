@@ -1,0 +1,51 @@
+@import 'partails/params';
+@import 'partails/mixins';
+
+
+#reviews {
+   
+   .carousel-item {
+
+        transition: transform 3s ease, opacity 1s ease-out;
+
+        .wrapper{
+            height: 430px;
+
+            .carousel-caption {
+                left: 5%;
+                right: 5%;
+
+                .caption {
+                    color: $header-color;
+                    background-color: $background_reviews-color;
+                }
+
+                .name {
+                    color: $icons-color;
+                    padding-bottom: 0;
+                }
+
+                .link-vk {
+                    text-decoration: none;
+                    color: $carousel_description-color;
+                }
+            }        
+
+            img {
+                height: 125px;
+                width: 125px;
+                border-radius: 50%;
+            }
+        }
+   }
+   
+    
+  
+
+    .carousel-wrapper {
+        @include carousel_wrapper;
+        .carousel-indicators {
+            top: -12px;
+        }
+     }
+}

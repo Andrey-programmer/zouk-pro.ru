@@ -1,0 +1,14 @@
+#why_indiv {
+    text-align: center;
+    padding-bottom: 5rem;
+    .row {
+        .item {
+            .wrapper{
+                .icon {
+                    font-size: 5rem;
+                    color: $icons-color;
+                }
+            }
+        }
+    }
+}

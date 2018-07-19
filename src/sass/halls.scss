@@ -1,0 +1,82 @@
+@import 'partails/params';
+@import 'partails/mixins';
+
+
+#halls {
+
+    .row {
+        margin-bottom: 100px;
+
+        #carousel_hall_1,
+        #carousel_hall_2 { 
+
+            .carousel-wrapper {
+                @include carousel_wrapper; 
+                [class^="carousel-control"] {
+                    transform: translateX(0) !important;
+                }
+            }         
+            
+        }
+
+        .wrapper_context {
+            h4 { 
+                padding: 16px 0;
+                margin-bottom: 10px; 
+                small {
+                    color: $font_small-color;
+                    font-size: 75%;
+                }
+            }
+
+
+            padding: 0 20px;       
+            p {
+                margin-bottom: 1.5rem;
+            }    
+
+            .btn {
+                @include buttons;
+            }
+        }
+
+        #modal_kurskaya,
+        #modal_paveletskaya {
+            background-color: $modal_background-color;
+            text-align: center;
+
+            .modal-dialog {
+
+                max-width: 600px;
+
+                .modal-content {
+                    background-color: transparent;
+                    border: none;
+    
+                    button.close {
+                        color: white;
+                        text-shadow: none;
+                    }
+                   
+    
+                    .modal-body {
+                        padding: 0;
+                        box-shadow: 0 0 20px 1px black;
+    
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    
+                }    
+            }           
+        }
+    }
+}
+
+
+@media screen and (max-height: 992px) {
+    #halls {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,32 @@
+@import 'partails/params';
+@import 'partails/mixins';
+
+#form { 
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    
+    .col {
+        text-align: center;
+
+        input {
+            @include input_style;
+            width: 70%;
+        }
+
+        .btn {
+
+            @include buttons;
+            width: 30%;            
+            color: white;
+            transition: background-color .3s;
+
+            i {
+                margin-right: .5rem;
+            }
+        }
+    }
+   
+}

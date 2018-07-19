@@ -1,0 +1,70 @@
+@import 'partails/params';
+
+* {
+    outline: 0 !important;   
+}
+
+
+body {
+    
+    font-family: Lato, Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: 
+    img {
+        max-height: 100%;
+        width: auto;
+       
+    }
+
+    h1,
+    h2, 
+    h3,
+    h4,
+    h5 {
+        color:  $header-color;
+        font-weight: bold;
+    }
+
+    h5 {
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-size: 0.875rem;  
+        line-height: 1.4;       
+    }
+
+    h1,
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    h4 {
+        font-size: 1.125rem;
+    }
+
+    section {
+        margin-bottom: 3.75rem;
+    }
+
+    p {
+        color: $text-color;
+    }    
+  
+}
+
+    @media screen and (max-width: 1200px) {
+
+        html {
+            font-size: 12px;
+        }              
+    }

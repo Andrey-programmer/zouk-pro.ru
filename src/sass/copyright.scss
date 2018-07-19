@@ -1,0 +1,44 @@
+@import 'partails/params';
+
+
+
+#copyright {
+    margin-bottom: 0; 
+    background-color: $header-color; 
+    color: #ffffff;
+    padding: 20px 0;
+
+
+    .wrapper {
+               
+        p {
+            margin-bottom: 0; 
+            color: white;
+        }
+
+        img {
+            height: 18px;
+            transform: translateY(-2px); 
+            display: inline-block;
+        }
+    }
+
+    .contacts {
+        // @include contact-panel;
+        .btn a {
+            color: $icons-color;
+            font-size: 16px;
+
+            &:hover {
+                color: $icons_hover-color;
+            }
+        }
+
+        .link-white {
+            color: white;
+        }
+    }
+
+
+  
+}

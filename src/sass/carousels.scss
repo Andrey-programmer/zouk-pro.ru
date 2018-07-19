@@ -1,0 +1,72 @@
+@import 'partails/params';
+
+#carousel {
+    padding-top: 55px;
+    margin-bottom: 5rem;
+    
+
+    .carousel-item {     
+        text-align: center;
+        
+        img {
+            width: auto !important;
+            max-height: 600px;
+            margin: auto;
+            max-width: 100%;
+        }
+
+        .wrapper {
+            margin: auto;
+            display: inline-block;
+            position: relative;
+            max-width: 100%;
+
+            .carousel-caption {
+                right: 0;
+                left: 0;
+                bottom: 0;
+                line-height: 20px;
+                padding: 10px 20px;
+                background-color: $carousel_description-color;
+
+                h5 {
+                    color: white;
+                    font-weight: normal;
+                }
+            }
+        }
+        
+    } 
+    
+    .carousel-wrapper {
+        @include carousel_wrapper;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #carousel .carousel-wrapper [class|="carousel-control"][class$="prev"] {
+        transform: translate(0, -260px);
+    }
+    #carousel .carousel-wrapper [class|="carousel-control"][class$="next"] {
+        transform: translate(0, -260px);
+    }
+
+    #carousel .carousel-item img {
+        max-height: 400px;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    #carousel .carousel-wrapper [class|="carousel-control"][class$="prev"] {
+        transform: translate(2px, -226px);
+        opacity: 1;
+    }
+    #carousel .carousel-wrapper [class|="carousel-control"][class$="next"] {
+        transform: translate(-2px, -226px);
+        opacity: 1;
+    }
+  
+}
