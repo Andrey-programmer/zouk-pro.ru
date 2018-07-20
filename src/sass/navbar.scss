@@ -3,7 +3,9 @@
 
 
 .navbar {
-    padding: 28px 5px 22px 5px;
+    padding: 28px 5px 22px 5px;  
+    
+    transition: background-color .5s ease-in-out;
 
     .navbar-brand {
         .logo {
@@ -37,13 +39,15 @@
             line-height: 30px;   
             border: 0;
             margin: 0 5px;
+            -webkit-transition: background-color .3s;
             transition: background-color .3s;
             a {
                 i {
                     color: #fff;
     
                     &.fa-phone {
-                        transform: scale(-1, 1) translate(0, -2px);
+                        -webkit-transform: scale(-1, 1) translate(0, -2px);
+                                transform: scale(-1, 1) translate(0, -2px);
                     }
                 }
             }
