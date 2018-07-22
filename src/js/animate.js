@@ -8,14 +8,15 @@ $(window).scroll(function(){
             $(this).addClass($(this).data('animation')); 
         }
 
-        console.log($(this), $(window).scrollTop() + $(window).height(),  $(this).offset().top)
+        // console.log($(this), $(window).scrollTop() + $(window).height(),  $(this).offset().top)
     });
 });
 
+// if($(window))
 
 $(window).scroll(() => {
-    $('.navbar').addClass('bg-light');  
+    $('.navbar').css({"backgroundColor": "white"});  
     if($(window).scrollTop() == 0) {
-        $('.navbar').removeClass('bg-light');   
+        $('.navbar').css({"backgroundColor" : "transparent"});   
     }
 })

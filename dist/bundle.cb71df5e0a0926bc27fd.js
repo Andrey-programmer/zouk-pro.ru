@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ea9f0558318edf524c3d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "cb71df5e0a0926bc27fd"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -11897,14 +11897,16 @@ $(window).scroll(function () {
             $(this).addClass($(this).data('animation'));
         }
 
-        console.log($(this), $(window).scrollTop() + $(window).height(), $(this).offset().top);
+        // console.log($(this), $(window).scrollTop() + $(window).height(),  $(this).offset().top)
     });
 });
 
+// if($(window))
+
 $(window).scroll(function () {
-    $('.navbar').addClass('bg-light');
+    $('.navbar').css({ "backgroundColor": "white" });
     if ($(window).scrollTop() == 0) {
-        $('.navbar').removeClass('bg-light');
+        $('.navbar').css({ "backgroundColor": "transparent" });
     }
 });
 
@@ -12039,4 +12041,4 @@ if(true) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.ea9f0558318edf524c3d.js.map
+//# sourceMappingURL=bundle.cb71df5e0a0926bc27fd.js.map
