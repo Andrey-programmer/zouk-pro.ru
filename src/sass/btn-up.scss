@@ -4,8 +4,8 @@
     position: fixed;
     background-color: $icons-color;
     border: 1px solid $icons-color;
-    top: 82%;
-    left: 92%;
+    top: 80%;
+    left: 90%;
     cursor: pointer; 
     z-index: 150;
     border-radius: 50%;
@@ -27,4 +27,18 @@
         opacity: 1;
     }
  
+}
+
+@media screen and (max-width: 1400px) {
+    .btn-up {
+        top: 74%;
+        left: 95%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .btn-up {
+        top: 74%;
+        left: 95%;
+    }
 }

@@ -80,3 +80,30 @@
         font-size: 13px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    #halls {
+        .row {
+              
+            margin-bottom: 50px;           
+           
+            &.kurskaya {  
+
+                .wrapper_context {
+                    padding-left: 0;
+                }
+            }
+            
+            &.paveletskaya {
+                div:first-of-type {
+                    order: 15;
+                }
+            }
+
+           .carousel {
+                margin-bottom: 75px;
+            }
+        } 
+    }
+}

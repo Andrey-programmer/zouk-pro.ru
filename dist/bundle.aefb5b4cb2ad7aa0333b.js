@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cb71df5e0a0926bc27fd"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "aefb5b4cb2ad7aa0333b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -11887,13 +11887,14 @@ module.exports = __webpack_require__.p + "fonts/Lato/Lato-Regular.ttf";
 "use strict";
 
 
-__webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
+// import 'jquery';
 
 $('.animated').css('opacity', 0);
 
+// Анимация появления при скролле
 $(window).scroll(function () {
     $('.animated').each(function () {
-        if ($(window).scrollTop() + $(window).height() > $(this).offset().top + 50) {
+        if ($(window).scrollTop() + $(window).height() > $(this).offset().top + 60) {
             $(this).addClass($(this).data('animation'));
         }
 
@@ -11901,8 +11902,20 @@ $(window).scroll(function () {
     });
 });
 
-// if($(window))
+// Если при обновлении позиция окна не сверху то всё что выше видимого блока - становится видимым ,
+// Всё что ниже - ещё невидимое
+$('.animated').each(function () {
+    if ($(window).scrollTop() + $(window).height() > $(this).offset().top + 50) {
+        $(this).addClass($(this).data('animation'));
+    };
+});
 
+// Если при обновлении позиция окна не сверху то цвет навбара - белый
+if ($(window).scrollTop() > 35) {
+    $('.navbar').css({ "backgroundColor": "white" });
+}
+
+// Меняем прозрачность навбара во время движения от верха к низу
 $(window).scroll(function () {
     $('.navbar').css({ "backgroundColor": "white" });
     if ($(window).scrollTop() == 0) {
@@ -11983,6 +11996,35 @@ __webpack_require__(/*! ./buttons */ "./js/buttons.js");
 
 __webpack_require__(/*! ./carousel */ "./js/carousel.js");
 
+__webpack_require__(/*! ./navbar */ "./js/navbar.js");
+
+/***/ }),
+
+/***/ "./js/navbar.js":
+/*!**********************!*\
+  !*** ./js/navbar.js ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
+
+$('.navbar .nav-item').each(function () {
+    $(this).click(function () {
+        if ($(window).width() < 992) {
+            $('.navbar-toggler').click();
+        }
+    });
+});
+
+$('button.navbar-toggler').click(function (event) {
+    $('.nav-menu').toggleClass('show');
+    $('.navbar-toggler').find('.line-first, .line-second, .line-third').toggleClass('x');
+});
+
 /***/ }),
 
 /***/ "./sass/style.scss":
@@ -12041,4 +12083,4 @@ if(true) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.cb71df5e0a0926bc27fd.js.map
+//# sourceMappingURL=bundle.aefb5b4cb2ad7aa0333b.js.map

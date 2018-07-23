@@ -11,4 +11,7 @@ import './animate';
 import './buttons';
 // Карусель
 import './carousel';
+//Анимация кнопки навбара и его автосворачивание при клике
+// На маленьких экранах
+import './navbar';
 

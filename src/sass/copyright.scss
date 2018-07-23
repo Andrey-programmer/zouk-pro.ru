@@ -6,7 +6,7 @@
     margin-bottom: 0; 
     background-color: $header-color; 
     color: #ffffff;
-    padding: 20px 0;
+    padding: 1rem 0;
 
 
     .wrapper {
@@ -39,4 +39,17 @@
         }
     }
   
+}
+
+@media screen and (max-width: 768px) {
+    #copyright {
+
+        .copyright {
+            transform: translateY(14px);
+        }
+        .wrap_contacts {
+            text-align: right;
+            transform: translateY(-16px)
+        }  
+    }
 }
