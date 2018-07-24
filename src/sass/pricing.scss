@@ -60,3 +60,18 @@
         margin: 7px;
     }
 }
+
+@media screen and (max-width: 576px) {
+    #pricing .row{ 
+        margin: 0;
+
+        .wrapper {
+            padding-left: 10px;
+            padding-right: 10px;
+
+            .card-text {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

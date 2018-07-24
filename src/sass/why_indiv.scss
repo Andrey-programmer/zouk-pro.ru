@@ -12,3 +12,10 @@
         }
     }
 }
+
+
+@media screen and (max-height: 576px) {
+    br {
+        display: none;
+    }
+}

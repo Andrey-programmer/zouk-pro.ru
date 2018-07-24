@@ -53,3 +53,18 @@
         }  
     }
 }
+
+@media screen and (max-width: 576px) {
+    #copyright {
+
+        .copyright {
+            transform: translateY(0);
+            order: 5;
+            text-align: right;
+        }
+        .wrap_contacts {
+            text-align: right;
+            transform: translateY(0)
+        }  
+    }
+}

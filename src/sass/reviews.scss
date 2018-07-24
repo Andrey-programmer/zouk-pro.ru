@@ -61,3 +61,13 @@
         }
     }
 }
+
+@media screen and (max-width:576px) {
+    #reviews {
+        .carousel-item {
+            .wrapper {
+                height:500px;
+            }
+        }
+    }
+}

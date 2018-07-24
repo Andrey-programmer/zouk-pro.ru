@@ -13,12 +13,12 @@
 
         .row {
 
-            .half-display {
+            .half-display {             
 
                 min-height: 100vh;
 
                 img {
-                    max-width: 100%;
+                    max-width: 100%;                   
                 }
                 
                 .wrapper {
@@ -111,6 +111,37 @@
     #main-display {
         .container .row .wrapper .wrapp-context .row {
             margin: 12px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #main-display {
+
+        h1{
+            text-align: center;
+        }
+        .half-display:last-of-type {
+            order: -15;
+            height: 100vh;
+        }
+
+        .half-display {
+           
+            img {
+                height: 100vh;
+            }
+
+            .wrapper {
+
+                .wrapp-context {
+                    
+                    .wrap_button {
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 }
