@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cede9a4eb1589c293684"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "0681b3f8a07a4edec33c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -11945,6 +11945,29 @@ $('button').focus(function () {
 
 /***/ }),
 
+/***/ "./js/cards.js":
+/*!*********************!*\
+  !*** ./js/cards.js ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
+
+// При ширине экрана меньше 480px убираем деление по 2 блока в ряду
+if ($(window).width() < 480) {
+    $('#pricing .wrapper').removeClass('col-6').addClass('col-8');
+}
+
+if ($(window).width() < 380) {
+    $('#pricing .wrapper').removeClass('col-6').addClass('col-10');
+}
+
+/***/ }),
+
 /***/ "./js/carousel.js":
 /*!************************!*\
   !*** ./js/carousel.js ***!
@@ -11972,6 +11995,14 @@ $('#reviews_carousel .carousel-item:last .caption').add('#reviews_carousel .caro
     $('#reviews_carousel .carousel-indicators li:first').click();
 });
 
+// Подгоняем высоту картинок под первую
+if ($(window).width() < 576) {
+    $('#carousel #main_carousel .carousel-item').each(function () {
+        $(this).find('img').height($('#carousel #main_carousel .carousel-item:first-of-type img').height());
+        console.log($(this).find('img').height());
+    });
+}
+
 /***/ }),
 
 /***/ "./js/index.js":
@@ -11998,6 +12029,10 @@ __webpack_require__(/*! ./carousel */ "./js/carousel.js");
 
 __webpack_require__(/*! ./navbar */ "./js/navbar.js");
 
+__webpack_require__(/*! ./reviews */ "./js/reviews.js");
+
+__webpack_require__(/*! ./cards */ "./js/cards.js");
+
 /***/ }),
 
 /***/ "./js/navbar.js":
@@ -12023,6 +12058,39 @@ $('.navbar .nav-item').each(function () {
 $('button.navbar-toggler').click(function (event) {
     $('.nav-menu').toggleClass('show');
     $('.navbar-toggler').find('.line-first, .line-second, .line-third').toggleClass('x');
+});
+
+/***/ }),
+
+/***/ "./js/reviews.js":
+/*!***********************!*\
+  !*** ./js/reviews.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
+
+//Проверка на высоту выполняется за исключением 1го элемента
+var maxHeight = 0;
+$.each($('#reviews .carousel-item:not(:first-of-type)'), function () {
+
+    // На время (доли секунд) делаем элемент видимым
+    $(this).addClass('active');
+
+    //Вычисляем выстоту содержимого данного элемента
+    var element_height = $(this).find('.carousel-caption').outerHeight() - 3;
+    // console.log($(this).find('.carousel-caption').height() - 5);
+    $(this).removeClass('active');
+    maxHeight = maxHeight > element_height ? maxHeight : element_height;
+});
+
+console.log(maxHeight);
+$.each($('#reviews .wrapper'), function () {
+    $(this).height(maxHeight);
 });
 
 /***/ }),
@@ -12083,4 +12151,4 @@ if(true) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.cede9a4eb1589c293684.js.map
+//# sourceMappingURL=bundle.0681b3f8a07a4edec33c.js.map

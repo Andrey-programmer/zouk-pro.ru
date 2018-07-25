@@ -125,12 +125,13 @@
         .half-display:last-of-type {
             order: -15;
             height: 100vh;
+            justify-content: flex-start !important;
         }
 
         .half-display {
            
             img {
-                height: 100vh;
+                max-height: 100vh;
             }
 
             .wrapper {
@@ -138,10 +139,39 @@
                 .wrapp-context {
                     
                     .wrap_button {
-                        text-align: center;
+                        text-align: center; 
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #main-display {
+        h1 {
+            font-size: 24px;
+            padding: 7px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 440px) {
+    section#main-display {
+        padding: 0 20px;
+
+        img {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    section#main-display {
+        img {
+            margin-top: 70px;
         }
     }
 }

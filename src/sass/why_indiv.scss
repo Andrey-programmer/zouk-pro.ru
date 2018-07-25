@@ -15,7 +15,11 @@
 
 
 @media screen and (max-height: 576px) {
-    br {
-        display: none;
+    #why_indiv {
+        padding-top: 60px;
+
+        br {
+            display: none;
+        }
     }
 }
