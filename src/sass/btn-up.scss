@@ -12,7 +12,9 @@
     opacity: .8;
     -webkit-transition: all .4s;
     transition: all .4s;
-    
+    display: none;
+    color: white;
+
     i {
         -webkit-transform: translateY(-1px);
                 transform: translateY(-1px); 
@@ -20,8 +22,8 @@
 
     &:hover,
     &:active {
-        background-color: $icons_hover-color;
-        border: 1px solid $icons_hover-color;
+        background-color: $icons_hover-color !important;
+        border: 1px solid $icons_hover-color !important;
         -webkit-box-shadow: none !important;
                 box-shadow: none !important;
         opacity: 1;

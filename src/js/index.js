@@ -23,3 +23,5 @@ import './cards';
 // убираем косяк с модального oryf
 import './modal_group_off';
 
+// Добавляем скролл по нажатию кнопки 
+import './scrollTop';

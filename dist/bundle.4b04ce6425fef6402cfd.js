@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "5f7539116c1840db02da"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "4b04ce6425fef6402cfd"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -12035,6 +12035,8 @@ __webpack_require__(/*! ./cards */ "./js/cards.js");
 
 __webpack_require__(/*! ./modal_group_off */ "./js/modal_group_off.js");
 
+__webpack_require__(/*! ./scrollTop */ "./js/scrollTop.js");
+
 /***/ }),
 
 /***/ "./js/modal_group_off.js":
@@ -12113,6 +12115,33 @@ $.each($('#reviews .wrapper'), function () {
 
 /***/ }),
 
+/***/ "./js/scrollTop.js":
+/*!*************************!*\
+  !*** ./js/scrollTop.js ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+$('.btn-up').click(function () {
+    $("html, body").animate({
+        scrollTop: 0
+    }, 500, 'swing');
+});
+
+$(window).scroll(function () {
+    console.log('scrolll', $(this).scrollTop());
+    if ($(this).scrollTop() > 400) {
+        $('.btn-up').fadeIn();
+    } else {
+        $('.btn-up').fadeOut();
+    }
+});
+
+/***/ }),
+
 /***/ "./sass/style.scss":
 /*!*************************!*\
   !*** ./sass/style.scss ***!
@@ -12169,4 +12198,4 @@ if(true) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.5f7539116c1840db02da.js.map
+//# sourceMappingURL=bundle.4b04ce6425fef6402cfd.js.map
