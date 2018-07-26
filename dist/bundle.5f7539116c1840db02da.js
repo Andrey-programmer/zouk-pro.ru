@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0681b3f8a07a4edec33c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5f7539116c1840db02da"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -12033,6 +12033,24 @@ __webpack_require__(/*! ./reviews */ "./js/reviews.js");
 
 __webpack_require__(/*! ./cards */ "./js/cards.js");
 
+__webpack_require__(/*! ./modal_group_off */ "./js/modal_group_off.js");
+
+/***/ }),
+
+/***/ "./js/modal_group_off.js":
+/*!*******************************!*\
+  !*** ./js/modal_group_off.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+$('.modal-backdrop').modal({
+     show: false
+});
+
 /***/ }),
 
 /***/ "./js/navbar.js":
@@ -12151,4 +12169,4 @@ if(true) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.0681b3f8a07a4edec33c.js.map
+//# sourceMappingURL=bundle.5f7539116c1840db02da.js.map

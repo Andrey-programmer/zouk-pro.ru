@@ -1,0 +1,18 @@
+
+#main-display .container .row .half-display #form_modal.show {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+
+.modal.show .modal-dialog {
+    max-width: 300px;
+    
+}
+
+.modal-backdrop {
+    display: none !important;
+}

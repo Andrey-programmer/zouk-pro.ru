@@ -20,3 +20,6 @@ import  './reviews';
 //При ширине экрана меньше 480px раскладываем карточки строчно
 import './cards';
 
+// убираем косяк с модального oryf
+import './modal_group_off';
+
