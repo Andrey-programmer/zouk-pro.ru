@@ -130,7 +130,7 @@
                         <br> для получения консультации</h3>
                       <p>Укажите свой номер телефона и мы Вам обязательно перезвоним, для уточнения удобной даты и времени занятия</p>
                     </div>
-                    <form>
+                    <form action=<%=require("./php/form.php")%> method="post">
                       <div class="row">
                         <div class="col-12">
                           <input type="text" name="name" placeholder="Имя" required>
@@ -413,7 +413,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <form>
+            <form action=<%=require("./php/form.php")%> method="post">
               <div class="row justify-content-between">
                 <div class="col-input col-md-6 mb-4">
                   <input type="text" name="name" placeholder="Имя" required>

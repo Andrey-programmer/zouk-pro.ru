@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4b04ce6425fef6402cfd"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b7281616d344277bbc28"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -11877,6 +11877,43 @@ module.exports = __webpack_require__.p + "fonts/Lato/Lato-Regular.ttf";
 
 /***/ }),
 
+/***/ "./js/ajax.js":
+/*!********************!*\
+  !*** ./js/ajax.js ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+$(document).ready(function () {
+
+    $("form").submit(function (event) {
+
+        $.ajax({
+            url: $(this).attr('action'),
+            type: $(this).attr('method'),
+            data: new FormData($(this)),
+            contentType: false,
+
+            success: function success(result) {
+                alert('ssjjssj');
+                alert(result);
+            },
+            error: function error() {
+                console.log('Ошибка! Данные не отправлены');
+            },
+            dataType: 'text',
+            timeout: 1000
+
+        });
+        event.preventDefault();
+    });
+});
+
+/***/ }),
+
 /***/ "./js/animate.js":
 /*!***********************!*\
   !*** ./js/animate.js ***!
@@ -12037,6 +12074,10 @@ __webpack_require__(/*! ./modal_group_off */ "./js/modal_group_off.js");
 
 __webpack_require__(/*! ./scrollTop */ "./js/scrollTop.js");
 
+__webpack_require__(/*! ./ajax */ "./js/ajax.js");
+
+__webpack_require__(/*! ../php/form.php */ "./php/form.php");
+
 /***/ }),
 
 /***/ "./js/modal_group_off.js":
@@ -12142,6 +12183,17 @@ $(window).scroll(function () {
 
 /***/ }),
 
+/***/ "./php/form.php":
+/*!**********************!*\
+  !*** ./php/form.php ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "php/form.03df5ef57f54960d98673d4e70b110c0.php";
+
+/***/ }),
+
 /***/ "./sass/style.scss":
 /*!*************************!*\
   !*** ./sass/style.scss ***!
@@ -12198,4 +12250,4 @@ if(true) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.4b04ce6425fef6402cfd.js.map
+//# sourceMappingURL=bundle.b7281616d344277bbc28.js.map

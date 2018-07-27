@@ -25,3 +25,9 @@ import './modal_group_off';
 
 // Добавляем скролл по нажатию кнопки 
 import './scrollTop';
+
+// Добавляем ajax - обработку данных формы
+import './ajax';
+
+// подключаем php 
+import '../php/form.php';

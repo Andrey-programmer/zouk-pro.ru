@@ -43,7 +43,7 @@ module.exports = {
         rules: [
 
             {
-                test: /\.(png|jpg|gif|ico)$/,
+                test: /\.(png|jpg|gif|ico|php)$/,
                 use: {
                     loader: 'file-loader',
                     options: {
