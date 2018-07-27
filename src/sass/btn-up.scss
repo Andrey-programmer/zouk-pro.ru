@@ -47,6 +47,6 @@
 
 @media screen and (max-width: 576px) {
     .btn-up {
-       display:none;
+       display:none !important;
     }
 }

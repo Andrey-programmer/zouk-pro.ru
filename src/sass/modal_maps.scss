@@ -1,0 +1,33 @@
+@import 'partails/params';
+
+#modal_kurskaya,
+#modal_paveletskaya {
+    background-color: $modal_background-color;
+    text-align: center;
+
+    .modal-dialog {
+
+        max-width: 600px;
+
+        .modal-content {
+            background-color: transparent;
+            border: none;
+
+            button.close {
+                color: white;
+                text-shadow: none;
+            }
+           
+
+            .modal-body {
+                padding: 0;
+                box-shadow: 0 0 20px 1px black;
+
+                img {
+                    width: 100%;
+                }
+            }
+            
+        }    
+    }           
+}

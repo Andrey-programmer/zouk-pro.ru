@@ -745,22 +745,10 @@
               <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#modal_kurskaya">
                 <i class="fas fa-map-marker-alt"></i>&emsp13;Схема проезда</button>
             </div>
-            <div class="modal fade" id="modal_kurskaya" tabindex="-1" role="dialog" aria-labelledby="modal_kurskaya_Title" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <img src=<%=require( "./img/kursk_map.jpg")%> alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
+        
         <div class="row paveletskaya align-items-center">
           <div class="col-md-6">
             <div class="wrapper_context pl-0">
@@ -775,21 +763,7 @@
                 - сделано все, чтоб было максимально комфортно заниматься.</p>
               <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#modal_paveletskaya">
                 <i class="fas fa-map-marker-alt"></i>&emsp13;Схема проезда</button>
-            </div>
-            <div class="modal fade" id="modal_paveletskaya" tabindex="-1" role="dialog" aria-labelledby="modal_paveletskaya_Title" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <img src=<%=require( "./img/serpuhovskaya_map.jpg")%> alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div>            
           </div>
           <div class="col-md-6">
             <div id="carousel_hall_2" class="carousel slide" data-ride="false" data-interval="false">
@@ -830,6 +804,34 @@
         </div>
       </div>
     </section>
+    <div class="modal fade" id="modal_kurskaya" tabindex="-1" role="dialog" aria-labelledby="modal_kurskaya_Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src=<%=require( "./img/kursk_map.jpg")%> alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal_paveletskaya" tabindex="-1" role="dialog" aria-labelledby="modal_paveletskaya_Title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src=<%=require( "./img/serpuhovskaya_map.jpg")%> alt="">
+          </div>
+        </div>
+      </div>
+    </div>
     <section id="copyright">
       <div class="container">
         <div class="row">
