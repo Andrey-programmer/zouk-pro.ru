@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a949b6e298fb9621fdea"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "df7486fb18af27c2589e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -11889,27 +11889,42 @@ module.exports = __webpack_require__.p + "fonts/Lato/Lato-Regular.ttf";
 
 $(document).ready(function () {
 
-    $("form").submit(function (event) {
+    $('form').submit(function (event) {
+        event.preventDefault();
+        $.ajax({
+            url: $(this).attr('action'),
+            type: $(this).attr('method'),
+            data: $(this).serialize(),
+            success: function success(result) {
+                alert('ssjjssj');
+            },
+            error: function error(result) {
+                console.log('Ошибка! Данные не отправлены');
+            }
+        });
+    });
 
+    /* $("form").submit(function( event ) {              
+       
+      
         $.ajax({
             url: $(this).attr('action'),
             type: $(this).attr('method'),
             data: new FormData($(this)),
             contentType: false,
-
-            success: function success(result) {
+              success : function (result) {
                 alert('ssjjssj');
                 alert(result);
+                event.preventDefault();
             },
-            error: function error() {
+            error: function(){
                 console.log('Ошибка! Данные не отправлены');
             },
             dataType: 'text',
             timeout: 1000
-
-        });
-        event.preventDefault();
-    });
+          });     
+      
+    });   */
 });
 
 /***/ }),
@@ -11995,13 +12010,23 @@ $('button').focus(function () {
 __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
 
 // При ширине экрана меньше 480px убираем деление по 2 блока в ряду
-if ($(window).width() < 480) {
+if ($(window).width() < 576) {
     $('#pricing .wrapper').removeClass('col-6').addClass('col-8');
 }
 
 if ($(window).width() < 380) {
-    $('#pricing .wrapper').removeClass('col-6').addClass('col-10');
+    $('#pricing .wrapper').removeClass('col-6').addClass('col-11');
 }
+
+var maxHeight = 0;
+
+$('#pricing .card').each(function () {
+    maxHeight = $(this).height() > maxHeight ? $(this).height() : maxHeight;
+});
+
+$('#pricing .card').each(function () {
+    $(this).height(maxHeight);
+});
 
 /***/ }),
 
@@ -12190,7 +12215,7 @@ $(window).scroll(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "php/form.03df5ef57f54960d98673d4e70b110c0.php";
+module.exports = __webpack_require__.p + "php/form.cf22b2da6588aaad858c5c702a889545.php";
 
 /***/ }),
 
@@ -12250,4 +12275,4 @@ if(true) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.a949b6e298fb9621fdea.js.map
+//# sourceMappingURL=bundle.df7486fb18af27c2589e.js.map

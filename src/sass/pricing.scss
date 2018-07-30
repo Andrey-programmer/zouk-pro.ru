@@ -4,53 +4,63 @@
     .row {
         text-align: center;
 
-        .card {
-            padding: 30px 15px;
-            margin-bottom: 20px;
+        .wrapper {
+            padding: 0;
 
-            .price {                
-                display: inline-block;
-                height: $height-price-around;
-                width: $height-price-around;
-                line-height: $height-price-around;
-                border-radius: 50%;
-                background-color: $icons-color;
-                color: white;
-                font-size: 1.5rem;
-                margin: auto;           
-            }
+            .card {
+                padding: 30px 0 10px;
+                margin-bottom: 20px;
     
-            .card-title {
-                text-transform: none;
-                font-size: 1.25rem;
-                letter-spacing: 0;
-
-                .text-color {
+                .price {                
+                    display: inline-block;
+                    height: $height-price-around;
+                    width: $height-price-around;
+                    line-height: $height-price-around;
+                    border-radius: 50%;
+                    background-color: $icons-color;
+                    color: white;
+                    font-size: 1.5rem;
+                    margin: auto;    
+                    margin-bottom: 15px;       
+                }
+        
+                .card-title {
+                    text-transform: none;
+                    font-size: 1.15rem;
+                    letter-spacing: 0;
+    
+                    .text-color {
+                        color: $icons-color;
+                    }
+    
+                    span {
+                        color: white;
+                    }
+                }
+    
+                .btn {
+                    border-radius: 15px;
+                    color: $icons-color;
+                    padding: 4px 20px;
+                    border: 1px solid $icons-color;
+                    margin-top: 10px;
+                    font-size: 14px;
+    
+                    &:hover {
+                        color: $icons_hover-color;
+                        border: 1px solid $icons_hover-color;
+                    }
+                }
+    
+                .card-text.little {
+                    font-size: 12px;
+                }
+                .card-text:first-of-type i{
                     color: $icons-color;
                 }
-            }
-
-            .btn {
-                border-radius: 15px;
-                color: $icons-color;
-                padding: 4px 20px;
-                border: 1px solid $icons-color;
-                margin-top: 10px;
-                font-size: 14px;
-
-                &:hover {
-                    color: $icons_hover-color;
-                    border: 1px solid $icons_hover-color;
-                }
-            }
-
-            .card-text.little {
-                font-size: 12px;
-            }
-            .card-text:first-of-type i{
-                color: $icons-color;
-            }
-        }      
+            }      
+        }
+      
 
     }
 }
@@ -65,13 +75,19 @@
     #pricing .row{ 
         margin: 0;
 
-        .wrapper {
-            padding-left: 10px;
-            padding-right: 10px;
+        .card-deck{
+            align-items: center;
 
-            .card-text {
-                margin-bottom: 5px;
+            .wrapper {
+                padding-left: 10px;
+                padding-right: 10px;
+    
+               
+    
+                .card-text {
+                    margin-bottom: 5px;
+                }
             }
-        }
+        }     
     }
 }

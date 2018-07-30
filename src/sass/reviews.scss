@@ -18,6 +18,7 @@
                 .caption {
                     color: $header-color;
                     background-color: $background_reviews-color;
+                    padding: 30px;
                 }
 
                 .name {
@@ -67,6 +68,13 @@
         .carousel-item {
             .wrapper {
                 height:500px;
+
+                .carousel-caption {
+                    
+                    .caption {
+                        padding: 10px;
+                    }
+                }
             }
         }
     }
