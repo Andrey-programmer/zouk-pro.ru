@@ -1,11 +1,64 @@
 
-#main-display .container .row .half-display #form_modal.show {
+ #form_modal, 
+ #form_modal_pricing {
+    background-color: $modal_background-color;
+
+    .modal-content {
+        text-align: center;
+        border-radius: 1rem;   
+
+        .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-body {
+            padding: 40px;  
+            padding-top: 0;
+            
+            .wrapper {
+                h3 {
+                    font-size: 1.5rem;
+                }
+            }
+
+
+            form {                               
+
+                .row{
+                    justify-content: center;
+
+                    div {
+                        margin-bottom: 1rem; 
+                        padding: 0;
+
+                        input {
+                            @include input_style;
+                            width: 90%;
+                        }
+
+                        .btn {
+                            @include buttons;
+                            &:active {
+                                outline: none;
+                            }
+                        }
+                    }                          
+                }
+            }
+          
+        }
+    }
+    
+}
+
+#main-display .container .row .half-display #form_modal.show,
+#form_modal_pricing.show {
     display: flex !important;
     justify-content: center;
-    align-items: center;
-
-   
+    align-items: center;   
 }
+
+
 
 
 .modal.show .modal-dialog {
@@ -13,6 +66,3 @@
     
 }
 
-.modal-backdrop {
-      
-}

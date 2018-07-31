@@ -1,4 +1,4 @@
-// import 'jquery';
+import 'jquery';
 
 // Делаем переключение слайдера по клику на сам слайдер
 $('#carousel .carousel-item').click(function(){
@@ -25,3 +25,13 @@ if($(window).width() < 576) {
 
     });
 }
+
+
+// Делаем переключение слайдера по клику на сам слайдер Halls
+$('#halls .row:has(.carousel-item)').each(function() {
+    // console.log( $(this).find('.carousel-item'));
+    $(this).find('.carousel-item').click(function(){        
+        $(this).parents('.carousel-inner')[0].nextElementSibling.children[2].click();
+        // console.log(  '===', $(this).parents('.carousel-inner')[0].nextElementSibling.children[2]);
+    });
+});

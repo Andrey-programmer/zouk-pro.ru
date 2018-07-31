@@ -8,7 +8,7 @@ $('.btn-up').click(()=>{
 
 
 $(window).scroll(function(){
-    console.log('scrolll', $(this).scrollTop() );
+    // console.log('scrolll', $(this).scrollTop() );
     if($(this).scrollTop() > 400) {
         $('.btn-up').fadeIn(); 
     }

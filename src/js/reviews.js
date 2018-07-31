@@ -15,7 +15,7 @@ $.each($('#reviews .carousel-item:not(:first-of-type)'), function(){
    
 });
 
-console.log(maxHeight);
+// console.log(maxHeight);
 $.each($('#reviews .wrapper'), function() {
     $(this).height(maxHeight);
 });

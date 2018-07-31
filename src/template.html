@@ -132,6 +132,9 @@
                     </div>
                     <form action=<%=require( "./php/form.php")%> method="post">
                       <div class="row">
+                          <div class="col-12">
+                              <input type="text" name="Первый экран" hidden>
+                              </div>
                         <div class="col-12">
                           <input type="text" name="name" placeholder="Имя" required>
                         </div>
@@ -415,6 +418,9 @@
           <div class="col-lg-9">
             <form action=<%=require( "./php/form.php")%> method="post">
               <div class="row justify-content-between">
+                  <div class="col-12">
+                      <input type="text" name="Средняя форма" hidden>
+                      </div>
                 <div class="col-input col-md-6 mb-4">
                   <input type="text" name="name" placeholder="Имя" required>
                 </div>
@@ -609,15 +615,15 @@
         </div>
         <div class="row justify-content-center">
           <div class="card-deck">
-           <div class="wrapper col-lg-3 col-6">
-              <div class="card">              
-                  <h5 class="card-title">Первое занятие</h5>     
+            <div class="wrapper col-lg-3 col-6">
+              <div class="card">
+                <h5 class="card-title">Первое занятие</h5>
                 <div class="card-body">
-                  <div class="price"> 
+                  <div class="price">
                     <span class="cein">1000
                       <i class="fas fa-ruble-sign"></i>
                     </span>
-                  </div> 
+                  </div>
                   <p class="card-text">Скидка на пробное занятие 1000
                     <i class="fas fa-ruble-sign"></i>
                     <i class="far fa-smile-wink"></i>
@@ -626,14 +632,15 @@
                   <p class="card-text little">* Стоимость посещения залов студии Ивара оплачивается отдельно - 250 ₽</p>
                 </div>
                 <div class="card-footer">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#form_modal">Подробнее</button>
+                  <button type="button" class="btn" data-toggle="modal" data-target="#form_modal_pricing">Подробнее</button>
                 </div>
               </div>
-           </div>
 
-<div class="wrapper  col-6 col-lg-3">  
+            </div>
+
+            <div class="wrapper  col-6 col-lg-3">
               <div class="card">
-                   <h5 class="card-title">Разовое занятие</h5>
+                <h5 class="card-title">Разовое занятие</h5>
                 <div class="card-body">
                   <div class="price">
                     <span class="cein">2000
@@ -645,22 +652,22 @@
                   <p class="card-text little">* Стоимость посещения залов студии Ивара оплачивается отдельно - 250 ₽</p>
                 </div>
                 <div class="card-footer">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#form_modal">Подробнее</button>
+                  <button type="button" class="btn" data-toggle="modal" data-target="#form_modal_pricing">Подробнее</button>
                 </div>
               </div>
-</div>
+            </div>
 
 
             <div class="wrapper col-6 col-lg-3">
-              <div class="card">            
-                  <h5 class="card-title">Абонемент на
-                    <span class="text-color">8</span> занятий</h5>           
+              <div class="card">
+                <h5 class="card-title">Абонемент на
+                  <span class="text-color">8</span> занятий</h5>
                 <div class="card-body">
-                    <div class="price">
-                        <span class="cein">14000
-                          <i class="fas fa-ruble-sign"></i>
-                        </span>
-                      </div>
+                  <div class="price">
+                    <span class="cein">14000
+                      <i class="fas fa-ruble-sign"></i>
+                    </span>
+                  </div>
                   <p class="card-text">Экономия 2 000
                     <i class="fas fa-ruble-sign"></i>
                   </p>
@@ -668,22 +675,22 @@
                   <p class="card-text little">* Стоимость посещения залов студии Ивара оплачивается отдельно - 250 ₽</p>
                 </div>
                 <div class="card-footer">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#form_modal">Подробнее</button>
+                  <button type="button" class="btn" data-toggle="modal" data-target="#form_modal_pricing">Подробнее</button>
                 </div>
               </div>
-              
+
             </div>
 
-            <div class="wrapper  col-6 col-lg-3"> 
-              <div class="card">              
-                  <h5 class="card-title">Абонемент на
-                    <span class="text-color">16</span> занятий</h5>              
+            <div class="wrapper  col-6 col-lg-3">
+              <div class="card">
+                <h5 class="card-title">Абонемент на
+                  <span class="text-color">16</span> занятий</h5>
                 <div class="card-body">
-                    <div class="price">
-                        <span class="cein">27000
-                          <i class="fas fa-ruble-sign"></i>
-                        </span>
-                      </div>
+                  <div class="price">
+                    <span class="cein">27000
+                      <i class="fas fa-ruble-sign"></i>
+                    </span>
+                  </div>
                   <p class="card-text">Экономия 5 000
                     <i class="fas fa-ruble-sign"></i>
                   </p>
@@ -691,14 +698,49 @@
                   <p class="card-text little">* Стоимость посещения залов студии Ивара оплачивается отдельно - 250 ₽</p>
                 </div>
                 <div class="card-footer">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#form_modal">Подробнее</button>
+                  <button type="button" class="btn" data-toggle="modal" data-target="#form_modal_pricing">Подробнее</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section>  
+    <div class="modal fade bd-example-modal-sm" id="form_modal_pricing" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="wrapper">
+            <h3>Оставьте заявку
+              <br> для получения консультации</h3>
+            <p>Укажите свой номер телефона и мы Вам обязательно перезвоним, для уточнения удобной даты и времени занятия</p>
+          </div>
+          <form action=<%=require( "./php/form.php")%> method="post">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" name="Прайс-форма" hidden>
+                    </div>
+              <div class="col-12">
+                <input type="text" name="name" placeholder="Имя" required>
+              </div>
+              <div class="col-12">
+                <input type="tel" name="mobil" placeholder="Телефон" required>
+              </div>
+              <div class="col-7">
+                <button type="submit" class="btn btn-primary">Записаться</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> 
   </main>
   <footer>
     <section id="halls" class="animated" data-animation="fadeInUp fadeIn">
