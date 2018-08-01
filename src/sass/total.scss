@@ -61,7 +61,8 @@ body {
     }    
   
     input:invalid { 
-        box-shadow: none; 
+        -webkit-box-shadow: none; 
+                box-shadow: none; 
     }  
     
 }

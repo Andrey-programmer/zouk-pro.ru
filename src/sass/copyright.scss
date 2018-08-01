@@ -18,7 +18,8 @@
 
         img {
             height: 18px;
-            transform: translateY(-2px); 
+            -webkit-transform: translateY(-2px);
+                    transform: translateY(-2px); 
             display: inline-block;
         }
     }
@@ -45,11 +46,13 @@
     #copyright {
 
         .copyright {
-            transform: translateY(14px);
+            -webkit-transform: translateY(14px);
+                    transform: translateY(14px);
         }
         .wrap_contacts {
             text-align: right;
-            transform: translateY(-16px)
+            -webkit-transform: translateY(-16px);
+                    transform: translateY(-16px)
         }  
     }
 }
@@ -58,13 +61,17 @@
     #copyright {
 
         .copyright {
-            transform: translateY(0);
-            order: 5;
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            -webkit-box-ordinal-group: 6;
+                -ms-flex-order: 5;
+                    order: 5;
             text-align: right;
         }
         .wrap_contacts {
             text-align: right;
-            transform: translateY(0)
+            -webkit-transform: translateY(0);
+                    transform: translateY(0)
         }  
     }
 }

@@ -7,12 +7,19 @@ $(document).ready(function(){
         url:  $(this).attr('action'),
         type: $(this).attr('method'),
         data: $(this).serialize(),
-        success: function(result) {
-        alert('ssjjssj');
+        beforeSend:() => {
+            $(this).parents('.modal').find('.close').click(); 
+        },
+        success: function(result) {        
         },
         error: function(result) {
-        console.log('Ошибка! Данные не отправлены');
-        }
+        console.log('Упс! Что то пошло не так ...');
+        },
+        complete: () => {                
+           $('#form_modal_success').modal({
+                show: true
+            });
+        },
         });
         });
 
@@ -41,4 +48,7 @@ $(document).ready(function(){
     });   */
     
 });
+
+
+
 

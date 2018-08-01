@@ -32,11 +32,13 @@
         width: 30px;
 
         &[class$="prev"] {
-           transform: translateX(-10px);
+           -webkit-transform: translateX(-10px);
+                   transform: translateX(-10px);
         }
 
         &[class$="next"] {
-            transform: translateX(10px);
+            -webkit-transform: translateX(10px);
+                    transform: translateX(10px);
         }
         
         i {

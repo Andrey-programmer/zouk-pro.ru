@@ -5,6 +5,8 @@
 .navbar {
     padding: 28px 5px 22px 5px;  
     
+    -webkit-transition: background-color .5s ease-in-out;  
+    
     transition: background-color .5s ease-in-out;
 
     button.navbar-toggler {
@@ -26,6 +28,8 @@
                 background-color: $icons-color;
                 -webkit-transition: opacity .3, -webkit-transform .3s;
                 transition: opacity .3, -webkit-transform .3s;
+                -webkit-transition: opacity .3s, -webkit-transform .3s;
+                transition: opacity .3s, -webkit-transform .3s;
                 transition: transform .3s, opacity .3s;
                 transition: transform .3s, opacity .3s, -webkit-transform .3s;
 

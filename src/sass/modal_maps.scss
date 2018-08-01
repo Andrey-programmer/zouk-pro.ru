@@ -21,7 +21,8 @@
 
             .modal-body {
                 padding: 0;
-                box-shadow: 0 0 20px 1px black;
+                -webkit-box-shadow: 0 0 20px 1px black;
+                        box-shadow: 0 0 20px 1px black;
 
                 img {
                     width: 100%;

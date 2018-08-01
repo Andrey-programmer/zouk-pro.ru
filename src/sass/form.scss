@@ -21,6 +21,7 @@
 
             @include buttons;                       
             color: white;
+            -webkit-transition: background-color .3s;
             transition: background-color .3s;
             padding: 6px 15px;
             text-align: center;

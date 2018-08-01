@@ -6,7 +6,13 @@
    
    .carousel-item {
 
+        -webkit-transition: opacity 1s ease-out, -webkit-transform 3s ease;
+
+        transition: opacity 1s ease-out, -webkit-transform 3s ease;
+
         transition: transform 3s ease, opacity 1s ease-out;
+
+        transition: transform 3s ease, opacity 1s ease-out, -webkit-transform 3s ease;
 
         .wrapper{
             height: 430px;

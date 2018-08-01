@@ -151,5 +151,5 @@ module.exports = {
         progress: true,
         open: true, //чтобы страница автоматически запускалась при использовании dev-сервера     
     },
-    devtool : 'source-map' // Для dev-разработки!!! для production 'eval-sourcemap'
+    devtool : 'eval-sourcemap' //'source-map' - Для dev-разработки!!! для production 'eval-sourcemap'
 };

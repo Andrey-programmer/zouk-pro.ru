@@ -65,7 +65,9 @@
     #masters {
         .andrey {
             div.image {
-                order: -5;
+                -webkit-box-ordinal-group: -4;
+                    -ms-flex-order: -5;
+                        order: -5;
             }
         }
 

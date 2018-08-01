@@ -132,9 +132,9 @@
                     </div>
                     <form action=<%=require( "./php/form.php")%> method="post">
                       <div class="row">
-                          <div class="col-12">
-                              <input type="text" name="Первый экран" hidden>
-                              </div>
+                        <div class="col-12">
+                          <input type="text" name="form_subject" value="Форма первого экрана" hidden>
+                        </div>
                         <div class="col-12">
                           <input type="text" name="name" placeholder="Имя" required>
                         </div>
@@ -418,9 +418,9 @@
           <div class="col-lg-9">
             <form action=<%=require( "./php/form.php")%> method="post">
               <div class="row justify-content-between">
-                  <div class="col-12">
-                      <input type="text" name="Средняя форма" hidden>
-                      </div>
+                <div class="col-12">
+                  <input type="text" name="form_subject" value="Центральная форма" hidden>
+                </div>
                 <div class="col-input col-md-6 mb-4">
                   <input type="text" name="name" placeholder="Имя" required>
                 </div>
@@ -604,7 +604,6 @@
           </div>
         </div>
       </div>
-
     </section>
     <section id="pricing" class="animated" data-animation="fadeInUp fadeIn">
       <div class="container">
@@ -705,43 +704,63 @@
           </div>
         </div>
       </div>
-    </section>  
+    </section>
     <div class="modal fade bd-example-modal-sm" id="form_modal_pricing" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="wrapper">
-            <h3>Оставьте заявку
-              <br> для получения консультации</h3>
-            <p>Укажите свой номер телефона и мы Вам обязательно перезвоним, для уточнения удобной даты и времени занятия</p>
+      aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <form action=<%=require( "./php/form.php")%> method="post">
-            <div class="row">
-                <div class="col-12">
-                    <input type="text" name="Прайс-форма" hidden>
-                    </div>
-              <div class="col-12">
-                <input type="text" name="name" placeholder="Имя" required>
-              </div>
-              <div class="col-12">
-                <input type="tel" name="mobil" placeholder="Телефон" required>
-              </div>
-              <div class="col-7">
-                <button type="submit" class="btn btn-primary">Записаться</button>
-              </div>
+          <div class="modal-body">
+            <div class="wrapper">
+              <h3>Оставьте заявку
+                <br> для получения консультации</h3>
+              <p>Укажите свой номер телефона и мы Вам обязательно перезвоним, для уточнения удобной даты и времени занятия</p>
             </div>
-          </form>
+            <form action=<%=require( "./php/form.php")%> method="post">
+              <div class="row">
+                <div class="col-12">
+                  <input type="text" name="form_subject" value="Форма_абонементы" hidden>
+                </div>
+                <div class="col-12">
+                  <input type="text" name="name" placeholder="Имя" required>
+                </div>
+                <div class="col-12">
+                  <input type="tel" name="mobil" placeholder="Телефон" required>
+                </div>
+                <div class="col-7">
+                  <button type="submit" class="btn btn-primary">Записаться</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div> 
   </main>
+  <button type="button btn_success" class="btn btn-primary" data-toggle="modal" data-target="#form_modal_success" hidden>
+      Запустить модальное окно
+    </button>
+  <div class="modal fade bd-example-modal-sm" id="form_modal_success" tabindex="-1" role="dialog" aria-labelledby="mySmallModalSuccess"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">      
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        </div>         
+        <div class="modal-body">         
+            <h3 class="modal-title">Благодарим за
+              <br> обращение!</h3>
+            <p>Мы свяжемся с Вами в ближайшее время</p>          
+        </div>
+      </div>
+    </div>
+  </div>
   <footer>
     <section id="halls" class="animated" data-animation="fadeInUp fadeIn">
       <div class="container">
