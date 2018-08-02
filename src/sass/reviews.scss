@@ -3,6 +3,7 @@
 
 
 #reviews {
+    z-index: 50;
    
    .carousel-item {
 
@@ -83,5 +84,24 @@
                 }
             }
         }
+
+        .carousel-wrapper {
+        
+            [class|="carousel-control"] {
+                 display: block !important;  
+            } 
+            
+            .carousel-control-prev {
+                -webkit-transform: translate(45px, -40px);
+                        transform: translate(45px, -40px);
+            }
+
+            .carousel-control-next {
+                -webkit-transform: translate(-45px, -40px);
+                         transform: translate(-45px, -40px);
+            }
+        }     
+        
+       
     }
 }
