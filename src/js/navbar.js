@@ -2,7 +2,7 @@ import 'jquery';
 
 $('.navbar .nav-item').each(function(){    
     $(this).click(()=>{
-        if($(window).width() < 992) {
+        if($(window).width() <= 992) {
             $('.navbar-toggler').click();
         }
     });

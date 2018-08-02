@@ -19,19 +19,19 @@ $('.animated').each(function(){
     if($(window).scrollTop() + $(window).height() > $(this).offset().top + 50) {
         $(this).addClass($(this).data('animation')); 
     };
-});
+}); 
 
 
 
 // Если при обновлении позиция окна не сверху то цвет навбара - белый
-if($(window).scrollTop() > 35) {
+if($(window).scrollTop() > 35 && $(window).width() > 992) {
     $('.navbar').css({"backgroundColor": "white"});
 }
 
 // Меняем прозрачность навбара во время движения от верха к низу
 $(window).scroll(() => { 
     $('.navbar').css({"backgroundColor": "white"});  
-    if($(window).scrollTop() == 0) {
+    if($(window).scrollTop() == 0 && $(window).width() > 992) {
         $('.navbar').css({"backgroundColor" : "transparent"});   
     }
 })
