@@ -37,20 +37,26 @@
                         color: white;
                     }
                 }
-    
-                .btn {
-                    border-radius: 15px;
-                    color: $icons-color;
-                    padding: 4px 20px;
-                    border: 1px solid $icons-color;
-                    margin-top: 10px;
-                    font-size: 14px;
-    
-                    &:hover {
-                        color: $icons_hover-color;
-                        border: 1px solid $icons_hover-color;
+                
+                .card-footer {
+                    background-color: white;
+
+                    .btn {
+                        border-radius: 15px;
+                        color: $icons-color;
+                        padding: 4px 20px;
+                        border: 1px solid $icons-color;
+                        margin-top: 10px;
+                        font-size: 14px;
+                        background-color: white;
+        
+                        &:hover {
+                            color: $icons_hover-color;
+                            border: 1px solid $icons_hover-color;
+                        }
                     }
                 }
+               
     
                 .card-text.little {
                     font-size: 12px;
@@ -79,10 +85,12 @@
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
+            display: block;
 
             .wrapper {
                 padding-left: 10px;
                 padding-right: 10px;
+                margin: auto;
     
                
     

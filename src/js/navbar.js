@@ -12,6 +12,10 @@ $('.navbar .nav-item').each(function(){
 
 
 $('button.navbar-toggler').click(function (event) {
-    $('.nav-menu').toggleClass('show');
+     if(!$('.navbar-collapse').hasClass('collapsing'))
     $('.navbar-toggler').find('.line-first, .line-second, .line-third').toggleClass('x');  
 });
+
+ 
+
+
