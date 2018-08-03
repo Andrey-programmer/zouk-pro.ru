@@ -115,7 +115,7 @@
                 </div>
               </div>
             </div>
-            <div class="modal fade bd-example-modal-sm" id="form_modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+            <div class="modal fade bd-example-modal-sm" id="form_modal" tabindex="-1" role="dialog" aria-labelledby="form_modal"
               aria-hidden="true">
               <div class="modal-dialog modal-sm">
                 <div class="modal-content">
@@ -279,9 +279,12 @@
     <section id="video" class="py-4">
       <div class="container">
         <div class="row  justify-content-center">
+          <div class="col-12" hidden>
+            <h2>Видео</h2>
+          </div>
           <div class="col-md-7">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-16by9" width="560" height="315" src="https://www.youtube.com/embed/YbjiMR5wMF4" frameborder="0"
+              <iframe class="embed-responsive-16by9" width="560" height="315" src="https://www.youtube.com/embed/YbjiMR5wMF4" 
                 allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
           </div>
@@ -591,11 +594,11 @@
                   <li data-target="#reviews_carousel" data-slide-to="5"></li>
                   <li data-target="#reviews_carousel" data-slide-to="6"></li>
                 </ol>
-                <a class="carousel-control-prev d-none" href="#reviews_carousel" role="button" data-slide="prev" m="1">
+                <a class="carousel-control-prev d-none" href="#reviews_carousel" role="button" data-slide="prev">
                   <i class="fas fa-chevron-circle-left fa-2x"></i>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next d-none" href="#reviews_carousel" role="button" data-slide="next" m="1">
+                <a class="carousel-control-next d-none" href="#reviews_carousel" role="button" data-slide="next">
                   <i class="fas fa-chevron-circle-right fa-2x"></i>
                   <span class="sr-only">Next</span>
                 </a>
@@ -705,7 +708,7 @@
         </div>
       </div>
     </section>
-    <div class="modal fade bd-example-modal-sm" id="form_modal_pricing" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+    <div class="modal fade bd-example-modal-sm" id="form_modal_pricing" tabindex="-1" role="dialog" aria-labelledby="form_modal_pricing"
       aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -742,7 +745,7 @@
     </div>
   </main>
 
-  <div class="modal fade bd-example-modal-sm" id="form_modal_success" tabindex="-1" role="dialog" aria-labelledby="mySmallModalSuccess"
+  <div class="modal fade bd-example-modal-sm" id="form_modal_success" tabindex="-1" role="dialog" aria-labelledby="form_modal_success"
     aria-hidden="true">
     <div class="modal-dialog modal-sm modal-dialog-centered">      
       <div class="modal-content">
@@ -879,7 +882,7 @@
         </div>
       </div>
     </section>
-    <div class="modal fade" id="modal_kurskaya" tabindex="-1" role="dialog" aria-labelledby="modal_kurskaya_Title" aria-hidden="true">
+    <div class="modal fade" id="modal_kurskaya" tabindex="-1" role="dialog" aria-labelledby="modal_kurskaya" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -893,7 +896,7 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="modal_paveletskaya" tabindex="-1" role="dialog" aria-labelledby="modal_paveletskaya_Title" aria-hidden="true">
+    <div class="modal fade" id="modal_paveletskaya" tabindex="-1" role="dialog" aria-labelledby="modal_paveletskaya" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -912,7 +915,7 @@
         <div class="row">
           <div class="copyright col-md-6">
             <div class="wrapper d-inline-block">
-              <p>Индивидуальные занятия по зуку (zouk) в Москве </p>
+              <h6>Индивидуальные занятия по зуку (zouk) в Москве </h6>
               &copy; 2018 год
               <img src=<%=require( "./img/logo-white.png")%> alt="">
             </div>

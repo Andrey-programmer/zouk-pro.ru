@@ -1,4 +1,4 @@
-import 'jquery';
+// import 'jquery';
 
 //Проверка на высоту выполняется за исключением 1го элемента
 let maxHeight = 0;

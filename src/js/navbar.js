@@ -1,4 +1,4 @@
-import 'jquery';
+// import 'jquery';
 
 $('.navbar .nav-item').each(function(){    
     $(this).click(()=>{

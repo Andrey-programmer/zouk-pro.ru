@@ -1,4 +1,4 @@
-import 'jquery';
+// import 'jquery';
 
 // Делаем переключение слайдера по клику на сам слайдер
 $('#carousel .carousel-item').click(function(){

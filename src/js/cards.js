@@ -1,4 +1,4 @@
-import 'jquery';
+// import 'jquery';
 
 // При ширине экрана меньше 480px убираем деление по 2 блока в ряду
 if ($(window).width() < 576) {
