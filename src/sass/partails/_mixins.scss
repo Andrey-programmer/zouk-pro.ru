@@ -5,11 +5,11 @@
 @mixin carousel_wrapper {
     position: relative;
         
-    .carousel-indicators {
+    .carousel-indicators { 
         position: absolute;
         top: 30px;
 
-        li {
+        li{
             height: 5px;
             width: 5px;
             border-radius: 50%;

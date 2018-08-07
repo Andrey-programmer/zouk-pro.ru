@@ -5,9 +5,9 @@
     padding-bottom: 60px;
     background-color: $background_carousel_section;
     
-
-    .carousel-item {     
+    .carousel_item {     
         text-align: center;
+        background-color: $background_carousel_section; 
         
         img {
             width: auto !important;
@@ -40,9 +40,21 @@
         }
         
     } 
-    
+
     .carousel-wrapper {
-        @include carousel_wrapper;
+        @include carousel_wrapper;      
+
+        .swiper-pagination {
+            position: relative;
+            
+            .swiper-pagination-bullet {
+                margin: 0 3px;
+               
+                &-active {
+                    background-color: $text-color;
+                }
+            }
+        }
     }
 }
 

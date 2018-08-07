@@ -11,6 +11,10 @@ import './animate';
 import './buttons';
 // Карусель
 import './carousel';
+//Touch- карусель
+
+import '../css/swiper.min.css';
+
 //Анимация кнопки навбара и его автосворачивание при клике
 // На маленьких экранах
 import './navbar';
@@ -20,8 +24,6 @@ import  './reviews';
 //При ширине экрана меньше 480px раскладываем карточки строчно
 import './cards';
 
-// убираем косяк с модального oryf
-import './modal_group_off';
 
 // Добавляем скролл по нажатию кнопки 
 import './scrollTop';
@@ -31,3 +33,9 @@ import './ajax';
 
 // подключаем php 
 import '../php/form.php';
+
+
+
+
+
+
