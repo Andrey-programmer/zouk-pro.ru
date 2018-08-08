@@ -4,11 +4,15 @@ import Swiper from './swiper.js';
 
 
 // Делаем переключение слайдера по клику на сам слайдер
-$('#carousel .carousel_item').each(function() {
-    $('#main_carousel .carousel-control-prev').click(function () {       
+setTimeout(() => {
+    $('#carousel .carousel_item').each(function(){
+        $(this).click(function() {
+            $('#carousel .carousel-control-next').click();     
+        });
     });
-});
+}, 500);
 
+console.log($('#carousel .carousel_item'));
 
 //Делаем переключение слайдера по клику на части слайдеров крома ссылок (а)
 $('#reviews .carousel-item .caption').add('#reviews .carousel-item .face').add('#reviews .carousel-item h3').click(function () {
