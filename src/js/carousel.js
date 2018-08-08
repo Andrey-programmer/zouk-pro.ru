@@ -1,6 +1,6 @@
 // import 'jquery';
 
-import Swiper from './swiper.js';
+import Swiper from './swiper.min';
 
 
 // Делаем переключение слайдера по клику на сам слайдер
@@ -48,12 +48,12 @@ $('#halls .row:has(.carousel-item)').each(function () {
 
 var swiper = new Swiper('.swiper-container', {
     navigation: {
-        nextEl: '.carousel-control-next',
-        prevEl: '.carousel-control-prev',
+        nextEl: '#carousel .carousel-control-next',
+        prevEl: '#carousel .carousel-control-prev',
     },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-    loop: true
+    loop: true 
 });
